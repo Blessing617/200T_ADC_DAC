@@ -1,0 +1,227 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Jan 19 15:14:11 2025
+# Process ID: 28428
+# Current directory: D:/Xilinx/Project/200t/ADC_DAC/ADC_DAC.runs/synth_1
+# Command line: vivado.exe -log ADC_DAC.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ADC_DAC.tcl
+# Log file: D:/Xilinx/Project/200t/ADC_DAC/ADC_DAC.runs/synth_1/ADC_DAC.vds
+# Journal file: D:/Xilinx/Project/200t/ADC_DAC/ADC_DAC.runs/synth_1\vivado.jou
+# Running On: Blessing, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 34142 MB
+#-----------------------------------------------------------
+Sourcing tcl script 'D:/Xilinx/Vivado/2023.1/scripts/Vivado_init.tcl'
+source ADC_DAC.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 457.434 ; gain = 161.418
+Command: read_checkpoint -auto_incremental -incremental D:/Xilinx/Project/200t/ADC_DAC/ADC_DAC.srcs/utils_1/imports/synth_1/ADC_DAC.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Xilinx/Project/200t/ADC_DAC/ADC_DAC.srcs/utils_1/imports/synth_1/ADC_DAC.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ADC_DAC -part xc7a200tfbg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg484-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 24228
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1338.156 ; gain = 411.938
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ADC_DAC' [D:/Xilinx/Project/200t/ADC_DAC/ADC_DAC.srcs/sources_1/new/ADC_DAC.v:23]
+INFO: [Synth 8-6157] synthesizing module 'PLL_ADC_DAC' [D:/Xilinx/Project/200t/ADC_DAC/ADC_DAC.runs/synth_1/.Xil/Vivado-28428-Blessing/realtime/PLL_ADC_DAC_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'PLL_ADC_DAC' (0#1) [D:/Xilinx/Project/200t/ADC_DAC/ADC_DAC.runs/synth_1/.Xil/Vivado-28428-Blessing/realtime/PLL_ADC_DAC_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ADC_DAC' (0#1) [D:/Xilinx/Project/200t/ADC_DAC/ADC_DAC.srcs/sources_1/new/ADC_DAC.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1428.645 ; gain = 502.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1428.645 ; gain = 502.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1428.645 ; gain = 502.426
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1428.645 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Xilinx/Project/200t/ADC_DAC/ADC_DAC.gen/sources_1/ip/PLL_ADC_DAC/PLL_ADC_DAC/PLL_ADC_DAC_in_context.xdc] for cell 'u_PLL_ADC_DAC'
+Finished Parsing XDC File [d:/Xilinx/Project/200t/ADC_DAC/ADC_DAC.gen/sources_1/ip/PLL_ADC_DAC/PLL_ADC_DAC/PLL_ADC_DAC_in_context.xdc] for cell 'u_PLL_ADC_DAC'
+Parsing XDC File [D:/Xilinx/Project/200t/ADC_DAC/ADC_DAC.xdc]
+Finished Parsing XDC File [D:/Xilinx/Project/200t/ADC_DAC/ADC_DAC.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Xilinx/Project/200t/ADC_DAC/ADC_DAC.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ADC_DAC_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ADC_DAC_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1454.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1454.875 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1454.875 ; gain = 528.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1454.875 ; gain = 528.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for u_PLL_ADC_DAC. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1454.875 ; gain = 528.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1454.875 ; gain = 528.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   14 Bit       Adders := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design ADC_DAC has port dac_value[3] driven by constant 0
+WARNING: [Synth 8-3917] design ADC_DAC has port dac_value[2] driven by constant 0
+WARNING: [Synth 8-3917] design ADC_DAC has port dac_value[1] driven by constant 0
+WARNING: [Synth 8-3917] design ADC_DAC has port dac_value[0] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1454.875 ; gain = 528.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1454.875 ; gain = 528.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1454.875 ; gain = 528.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1454.875 ; gain = 528.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1454.875 ; gain = 528.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1454.875 ; gain = 528.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1454.875 ; gain = 528.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1454.875 ; gain = 528.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1454.875 ; gain = 528.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1454.875 ; gain = 528.656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |PLL_ADC_DAC   |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |PLL_ADC_DAC |     1|
+|2     |LUT1        |     1|
+|3     |IBUF        |    11|
+|4     |OBUF        |    16|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1454.875 ; gain = 528.656
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 1454.875 ; gain = 502.426
+Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1454.875 ; gain = 528.656
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1457.375 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1467.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 82bdf3a8
+INFO: [Common 17-83] Releasing license: Synthesis
+23 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1467.586 ; gain = 977.074
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Common 17-1381] The checkpoint 'D:/Xilinx/Project/200t/ADC_DAC/ADC_DAC.runs/synth_1/ADC_DAC.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ADC_DAC_utilization_synth.rpt -pb ADC_DAC_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 19 15:14:48 2025...
